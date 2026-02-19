@@ -1,87 +1,48 @@
-/* SF Pro–style system font stack */
-:root {
-  --font-body: -apple-system, BlinkMacSystemFont,
-               "SF Pro Text", "SF Pro Display",
-               "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* Reset */
-* {
-  box-sizing: border-box;
-}
-
+/* Typography */
 body {
   margin: 0;
-  font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.7;
-  color: #111;
-  background: #fff;
-}
-
-/* Layout */
-.container {
-  max-width: 640px;
-  margin: 4rem auto;
-  padding: 0 1.25rem;
-}
-
-/* Homepage */
-.site-title {
-  font-size: 1.1rem;
-  font-weight: 400;
-  margin-bottom: 3rem;
-  letter-spacing: 0.02em;
-}
-
-/* Post list */
-.post-list {
-  list-style: none;
   padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+               "SF Pro Display", system-ui, sans-serif;
+  background: #ffffff;
+  color: #000;
 }
 
-.post-list li {
-  margin-bottom: 1.25rem;
+.container {
+  max-width: 680px;
+  margin: 80px auto;
+  padding: 0 20px;
 }
 
-.post-list a {
+/* Header */
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+/* Homepage posts */
+.home-post {
+  margin-bottom: 3rem;
+}
+
+.home-post-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.home-post-title a {
+  color: #000;
   text-decoration: none;
-  color: #111;
 }
 
-.post-list a:hover {
+.home-post-title a:hover {
   text-decoration: underline;
 }
 
-.post-list-date {
-  color: #777;
+.home-post-date {
   font-size: 0.85rem;
-  margin-left: 0.5rem;
-}
-
-/* Posts */
-.post-title {
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin-bottom: 0.25rem;
-}
-
-.post-date {
-  color: #777;
-  font-size: 0.85rem;
-  margin-bottom: 2rem;
-}
-
-.post-content p {
-  margin: 1.5rem 0;
-}
-
-/* Poetry spacing */
-.post-content p + p {
-  margin-top: 2rem;
-}
-
-/* Links */
-a {
-  color: #111;
+  color: #666;
+  margin-top: 0.25rem;
 }

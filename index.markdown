@@ -3,18 +3,17 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 ---
-layout: default
+layout: home
+title: Home
 ---
 
-<h1 class="site-title">{{ site.title }}</h1>
-
-<ul class="post-list">
-  {% for post in site.posts %}
-    <li>
+{% for post in site.posts %}
+  <article class="home-post">
+    <h2 class="home-post-title">
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <span class="post-list-date">
-        {{ post.date | date: "%Y" }}
-      </span>
-    </li>
-  {% endfor %}
-</ul>
+    </h2>
+    <p class="home-post-date">
+      {{ post.date | date: "%Y" }}
+    </p>
+  </article>
+{% endfor %}
