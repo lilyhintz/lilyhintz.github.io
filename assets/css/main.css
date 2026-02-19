@@ -9,9 +9,9 @@
 .hero-title {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
                "SF Pro Text", system-ui, sans-serif;
-  font-size: 8rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-size: 6rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
   margin: 0 0 3rem 0;
 }
 
@@ -23,16 +23,17 @@
 
 .hero-meta {
   max-width: 200px;
+  margin-top: 12rem; 
 }
 
 .publication-number {
-  font-size: 3rem;
+  font-size: 3.75rem;
   letter-spacing: 0.15em;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .read-link {
-  font-size: 0.85rem;
+  font-size: 1.5rem;
   letter-spacing: 0.12em;
   text-decoration: none;
   color: #000;
