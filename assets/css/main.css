@@ -1,6 +1,12 @@
 /* HERO HOMEPAGE */
 
-body {
+.container {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
   margin: 0;
   padding: 0;
 }
@@ -8,7 +14,8 @@ body {
 .hero {
   max-width: 1200px;
   margin: 80px auto;
-  padding: 5px;
+  padding:12px;
+  outline: 2px solid red;
 }
 
 .hero-title {
