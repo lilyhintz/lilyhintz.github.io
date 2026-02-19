@@ -1,48 +1,48 @@
-/* Typography */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-               "SF Pro Display", system-ui, sans-serif;
-  background: #ffffff;
-  color: #000;
-}
+/* HERO HOMEPAGE */
 
-.container {
-  max-width: 680px;
+.hero {
+  max-width: 1100px;
   margin: 80px auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
-/* Header */
-.site-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 3rem;
+.hero-title {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+               "SF Pro Text", system-ui, sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin: 0 0 3rem 0;
 }
 
-/* Homepage posts */
-.home-post {
-  margin-bottom: 3rem;
+.hero-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
 }
 
-.home-post-title {
-  font-size: 1.25rem;
-  font-weight: 400;
-  margin: 0;
+.hero-meta {
+  min-width: 120px;
 }
 
-.home-post-title a {
-  color: #000;
+.publication-number {
+  font-size: 1.1rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5rem;
+}
+
+.read-link {
+  font-size: 0.85rem;
   text-decoration: none;
+  color: #000;
 }
 
-.home-post-title a:hover {
+.read-link:hover {
   text-decoration: underline;
 }
 
-.home-post-date {
-  font-size: 0.85rem;
-  color: #666;
-  margin-top: 0.25rem;
+.hero-image img {
+  max-width: 520px;
+  height: auto;
+  display: block;
 }
