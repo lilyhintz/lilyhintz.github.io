@@ -1,7 +1,7 @@
 /* HERO HOMEPAGE */
 
 .hero {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 80px auto;
   padding: 0 40px;
 }
@@ -9,7 +9,7 @@
 .hero-title {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
                "SF Pro Text", system-ui, sans-serif;
-  font-size: 3.2rem;
+  font-size: 8rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   margin: 0 0 3rem 0;
@@ -17,28 +17,34 @@
 
 .hero-content {
   display: flex;
-  align-items: flex-start;
-  gap: 4rem;
+  justify-content: space-between;
+  min-height: 70vh;
 }
 
 .hero-meta {
-  min-width: 120px;
+  max-width: 200px;
 }
 
 .publication-number {
-  font-size: 1.1rem;
-  letter-spacing: 0.2em;
-  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.75rem;
 }
 
 .read-link {
   font-size: 0.85rem;
+  letter-spacing: 0.12em;
   text-decoration: none;
   color: #000;
 }
 
 .read-link:hover {
   text-decoration: underline;
+}
+
+.hero-image {
+  align-self: flex-end;
+  padding: 40px;
 }
 
 .hero-image img {

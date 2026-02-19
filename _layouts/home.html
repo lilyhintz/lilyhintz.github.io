@@ -5,23 +5,27 @@ layout: default
 {% assign post = site.posts.first %}
 
 <section class="hero">
+
   <h1 class="hero-title">
     {{ post.title | upcase }}
   </h1>
 
   <div class="hero-content">
+
     <div class="hero-meta">
       <div class="publication-number">
         {{ post.publication_number }}
       </div>
 
-      <a class="read-link" href="{{ post.url | relative_url }}">
-        read publication
+      <a class="read-link" href="{{ post.url }}">
+        READ PUBLICATION
       </a>
     </div>
 
     <div class="hero-image">
-      <img src="{{ post.hero_image | relative_url }}" alt="">
+      <img src="{{ post.hero_image }}" alt="{{ post.title }}">
     </div>
+
   </div>
+
 </section>
