@@ -1,5 +1,31 @@
 /* HERO HOMEPAGE */
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+}
+
+.container {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .container {
   max-width: none;
   margin: 0;
@@ -12,10 +38,9 @@ html, body {
 }
 
 .hero {
-  max-width: 1200px;
-  margin: 80px auto;
-  padding:12px;
-  outline: 2px solid red;
+  position: relative;
+  min-height: 100vh;
+  padding: 32px 40px; /* ← small, editorial padding */
 }
 
 .hero-title {
@@ -23,9 +48,10 @@ html, body {
                "SF Pro Text", system-ui, sans-serif;
   font-size: 6rem;
   font-weight: 450;
-  letter-spacing: 0.05em;
-  margin: 0 0 3rem 0;
+  letter-spacing: 0.035em;
+  margin: 0;
   text-align: left;
+  max-width: 70%;
 }
 
 .hero-content {
@@ -38,14 +64,16 @@ html, body {
 
 .hero-meta {
   max-width: 200px;
-  margin-top: 12rem;
+  margin-top: 8rem;
   margin-top: 5rem;
+  position: relative;
+  z-index: 2;
 }
 
 .publication-number {
-  font-size: 4.5rem;
+  font-size: 6rem;
   letter-spacing: 0.07em;
-  margin-bottom: 1rem;
+  margin-bottom: .06rem;
 }
 
 .read-link {
@@ -87,9 +115,10 @@ html, body {
 }
 
 .hero-image {
-  align-self: flex-end;
-  padding-bottom: 2rem;
-  padding-right: 2rem;
+  position: absolute;
+  bottom: 24px;
+  right: 32px;
+  z-index: 1;
 }
 
 .hero-image img {
