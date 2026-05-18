@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+
     <title>
       {% if page.title %}
         {{ page.title }} · {{ site.title }}
@@ -16,8 +17,24 @@
   </head>
 
   <body>
+
+    <header class="site-header">
+      <div class="nav-inner">
+
+        <a href="{{ '/' | relative_url }}" class="nav-left">
+          LILY HINTZ
+        </a>
+
+        <a href="{{ '/about/' | relative_url }}" class="nav-right">
+          ABOUT
+        </a>
+
+      </div>
+    </header>
+
     <main class="container">
       {{ content }}
     </main>
+
   </body>
 </html>
