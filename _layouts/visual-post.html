@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<article class="visual-post">
+
+  <header class="visual-header">
+
+    <h1 class="visual-title">
+      {{ page.title | upcase }}
+    </h1>
+
+    <div class="visual-meta">
+      {{ page.date | date: "%B %-d, %Y" }}
+    </div>
+
+  </header>
+
+  <section class="visual-gallery">
+
+    {% for image in page.gallery %}
+
+      <figure class="visual-item {{ image.orientation }}">
+
+        <img
+          src="{{ image.image }}"
+          alt="{{ image.alt }}"
+        >
+
+      </figure>
+
+    {% endfor %}
+
+  </section>
+
+  {% if content != "" %}
+
+    <section class="visual-text">
+      {{ content }}
+    </section>
+
+  {% endif %}
+
+</article>

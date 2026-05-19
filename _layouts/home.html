@@ -29,3 +29,84 @@ layout: default
   </div>
 
 </section>
+
+<section class="featured-publications">
+
+  <div class="featured-left">
+
+    <h2 class="featured-title">
+      HIGHLIGHTED WORKS
+    </h2>
+
+    <div class="publication-grid">
+
+      {% for post in site.posts limit:4 %}
+
+      <a class="publication-card" href="{{ post.url }}">
+
+        <img
+          src="{{ post.hero_image }}"
+          alt="{{ post.title }}"
+        >
+
+        <div class="publication-card-meta">
+          {{ post.publication_number }}
+        </div>
+
+        <h3>
+          {{ post.title | upcase }}
+        </h3>
+
+      </a>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+  <aside class="featured-sidebar">
+
+    <h2 class="sidebar-title">
+      EXPLORE
+    </h2>
+
+    <nav class="explore-links">
+
+      <a href="/poetry/">
+        Poetry
+      </a>
+
+      <a href="/photography/">
+        Photography
+      </a>
+
+      <a href="/printmaking/">
+        Printmaking
+      </a>
+
+    </nav>
+
+    <div class="recent-posts">
+
+  <h2 class="sidebar-title">
+    POSTED RECENTLY
+  </h2>
+
+  <div class="recent-post-links">
+
+    {% for post in site.posts limit:3 %}
+
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+
+    {% endfor %}
+
+  </div>
+
+</div>
+
+  </aside>
+
+</section>

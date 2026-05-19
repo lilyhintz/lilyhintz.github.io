@@ -18,11 +18,11 @@ permalink: /about/
         </p>
 
         <p>
-        It’s the dirt and mud from these experiences that inspire the poetry she scrapes out from underneath her nail beds and callouses. Photos to prove it wasn't just a dream make their way here as well, albeit a bit slower. 
+        It’s the dirt and mud from these experiences that inspire the poetry she scrapes out from underneath her nail beds and callouses. Photos to prove it wasn't just a dream make their way here as well, albeit slower. 
       </p>
 
       <p>
-       Our sites artist in residence is one dedicated to curiosity and connection, with work that spans emotions spent between oceans, skies, and cliff sides. Send a collaboration request—big or small to her email at <strong>lily-hintz@outlook.com</strong> to be part of work that tests the waters of who you are and what our world is meant to be. Or shoot an email just to say hi, all inquiries are always welcome. 
+       As mirrored through her artwork, Lily is dedicated to curiosity and connection, with work that spans emotions spent between oceans, skies, and cliff sides. Send a collaboration request—big or small to her email at <strong>lily-hintz@outlook.com</strong> to be part of work that tests the waters of who you are and what our world is meant to be. Or shoot an email just to say hi, all inquiries are always welcome. 
       </p>
 
     </div>
