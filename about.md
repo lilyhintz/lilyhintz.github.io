@@ -30,7 +30,7 @@ permalink: /about/
   </div>
 
   <div class="about-image">
-    <img src="/assets/images/about-photo.jpg" alt="Portrait of Lily Hintz">
+    <img src="/assets/images/about-photo.png" alt="Portrait of Lily Hintz">
   </div>
 
 </section>
