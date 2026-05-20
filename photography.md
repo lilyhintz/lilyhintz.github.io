@@ -7,7 +7,7 @@ permalink: /photography/
 <article class="gallery-page">
 
   <h1 class="gallery-title">
-    PHOTOGRAPHY
+    PHOTO<br class="mobile-break">GRAPHY
   </h1>
 
   <div class="gallery-grid">

@@ -1021,3 +1021,15 @@ main {
   }
 
 }
+
+.mobile-break {
+  display: none;
+}
+
+@media (max-width: 600px) {
+
+  .mobile-break {
+    display: block;
+  }
+
+}

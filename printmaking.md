@@ -7,7 +7,7 @@ permalink: /printmaking/
 <section class="gallery-page">
 
   <h1 class="gallery-title">
-    PRINTMAKING
+    PRINT<br class="mobile-break">MAKING
   </h1>
 
   <div class="gallery-grid">
