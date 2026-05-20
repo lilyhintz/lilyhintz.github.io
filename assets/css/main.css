@@ -158,8 +158,11 @@ main {
 .hero-image img {
   width: min(38vw, 560px);
 
-  height: auto;
   display: block;
+
+  aspect-ratio: 14 / 15;
+
+  object-fit: cover;
 }
 
 /* ===== Featured Publications ===== */
@@ -368,7 +371,7 @@ main {
 
   align-items: start;
 
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
 }
 
 .post-title {
@@ -456,7 +459,17 @@ main {
 }
 
 .visual-header {
-  margin-bottom: 2.25rem;
+  display: grid;
+
+  grid-template-columns:
+    minmax(300px, 1fr)
+    minmax(220px, 320px);
+
+  gap: 3rem;
+
+  align-items: start;
+
+  margin-bottom: 1rem;
 }
 
 .visual-title {
@@ -475,9 +488,19 @@ main {
 }
 
 .visual-meta {
+  text-align: right;
+
+  width: fit-content;
+
+  justify-self: end;
+
   font-family: 'Times New Roman', Times, serif;
 
   font-size: 1.1rem;
+
+  line-height: 1.8;
+
+  white-space: nowrap;
 }
 
 /* ===== Masonry Gallery ===== */
@@ -486,6 +509,8 @@ main {
   columns: 2 340px;
 
   column-gap: 2rem;
+
+  margin-top: 2rem;
 }
 
 .visual-item {
@@ -518,6 +543,28 @@ main {
 
 .visual-text p {
   margin-bottom: 1.5rem;
+}
+
+/* ===== Post Back Link ===== */
+
+.post-back {
+  display: inline-block;
+
+  margin-bottom: 2rem;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 1rem;
+
+  color: #000;
+
+  text-decoration: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.post-back:hover {
+  opacity: 0.55;
 }
 
 /* ===== Archive Pages ===== */
@@ -598,8 +645,10 @@ main {
 
   text-align: right;
 
-  white-space: nowrap;
+  white-space: nowrap;  
 }
+
+/* ===== Visual Archive Pages ===== */
 
 .gallery-page {
   padding: 48px 56px 60px 56px;
@@ -886,18 +935,25 @@ main {
   }
 
   .post-header {
-    grid-template-columns: 1fr;
+    display: flex;
 
-    gap: 2rem;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 2.25rem;
+
+    margin-bottom: 1.5rem;
   }
 
   .post-title {
     max-width: 100%;
+    margin: 0;
   }
 
   .post-meta {
     text-align: left;
-    justify-self: left;
+    margin: 0;
   }
 
   .post-content-grid {

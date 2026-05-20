@@ -2,7 +2,25 @@
 layout: default
 ---
 
-<section class="post-page">
+<article class="post-page">
+
+  {% if page.category == "poetry" %}
+  <a class="post-back" href="/poetry/">
+    ← POETRY ARCHIVE
+  </a>
+  {% endif %}
+
+  {% if page.category == "photography" %}
+    <a class="post-back" href="/photography/">
+      ← PHOTOGRAPHY ARCHIVE
+    </a>
+  {% endif %}
+
+  {% if page.category == "printmaking" %}
+    <a class="post-back" href="/printmaking/">
+      ← PRINTMAKING ARCHIVE
+    </a>
+  {% endif %}
 
   <div class="post-header">
 
@@ -36,4 +54,4 @@ layout: default
 
   </div>
 
-</section>
+</article>

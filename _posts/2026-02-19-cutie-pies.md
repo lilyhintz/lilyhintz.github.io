@@ -1,11 +1,15 @@
 ---
 layout: visual-post
-title: "Cutie Pies"
+title: "Cuddly Creatures"
 date: 2026-02-19
 category: photography
 publication_number: "002"
-journal: "Test"
+journal: "Testing it out"
 hero_image: "/assets/images/chief-the-dude.png"
+
+intro_text: >
+  A small collection of my favorite cutie pies.
+
 gallery:
 
   - image: "/assets/images/chief-the-dude.png"
@@ -26,4 +30,5 @@ gallery:
   - image: "/assets/images/achilles-angel.png"
     alt: "Kitty sleeping"
 ---
-A small collection of my favorite lil cutie pies.
+
+Very tired. With a little chaos. 

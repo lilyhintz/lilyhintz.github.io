@@ -4,23 +4,51 @@ layout: default
 
 <article class="visual-post">
 
-  <header class="visual-header">
+  {% if page.category == "photography" %}
+    <a class="post-back" href="/photography/">
+      ← PHOTOGRAPHY ARCHIVE
+    </a>
+  {% endif %}
+
+  {% if page.category == "printmaking" %}
+    <a class="post-back" href="/printmaking/">
+      ← PRINTMAKING ARCHIVE
+    </a>
+  {% endif %}
+
+    <header class="visual-header">
 
     <h1 class="visual-title">
-      {{ page.title | upcase }}
+        {{ page.title | upcase }}
     </h1>
 
     <div class="visual-meta">
-      {{ page.date | date: "%B %-d, %Y" }}
+
+        <div>{{ page.publication_number }}</div>
+
+        <div>{{ page.journal }}</div>
+
+        <div>
+        {{ page.date | date: "%B %-d, %Y" }}
+        </div>
+
     </div>
 
-  </header>
+    </header>
+
+  {% if page.intro_text %}
+
+    <section class="visual-text visual-text-top">
+      {{ page.intro_text | markdownify }}
+    </section>
+
+  {% endif %}
 
   <section class="visual-gallery">
 
     {% for image in page.gallery %}
 
-      <figure class="visual-item {{ image.orientation }}">
+      <figure class="visual-item">
 
         <img
           src="{{ image.image }}"
@@ -35,7 +63,7 @@ layout: default
 
   {% if content != "" %}
 
-    <section class="visual-text">
+    <section class="visual-text visual-text-bottom">
       {{ content }}
     </section>
 

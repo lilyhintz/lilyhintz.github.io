@@ -4,7 +4,7 @@ title: Photography
 permalink: /photography/
 ---
 
-<section class="gallery-page">
+<article class="gallery-page">
 
   <h1 class="gallery-title">
     PHOTOGRAPHY
@@ -37,4 +37,4 @@ permalink: /photography/
 
   </div>
 
-</section>
+</article>
